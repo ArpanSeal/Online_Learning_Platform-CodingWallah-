@@ -1,4 +1,4 @@
-# Online_Learning_Platform-CodingWallah-
+# Online_Learning_Platform (CodingWallah)
 
 Replit Link- https://replit.com/@ArpanSeal/CodingWallah?v=1
 
