@@ -12,11 +12,9 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <div class="d-flex">
-                <a href="/"><img class="img-fluid bd-placeholder-img my-2 mx-2" width="40" height="40"
-                        src="/img/logo.jpg"></img></a>
-            </div>
-            <a class="navbar-brand" href="#">CodingWallah</a>
+            <a href="/"><img class="img-fluid bd-placeholder-img my-2 mx-2" width="40" height="40"
+                    src="/img/logo.jpg"></img></a>
+            <a class="navbar-brand" href="/">CodingWallah</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -28,7 +26,7 @@
                         <a class="nav-link" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/html/about.html">About</a>
+                        <a class="nav-link" href="html/about.html">About</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
@@ -47,48 +45,90 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/html/contact.html">Contact Us</a>
+                        <a class="nav-link" href="html/contact.html">Contact Us</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+                <div class="m-2">
+                    <button class="btn btn-primary m-2" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger m-2" data-bs-toggle="modal" data-bs-target="#signupModal">Sign
+                        Up</button>
+                </div>
             </div>
         </div>
     </nav>
-    
+
     <div class="container d-flex justify-content-center allign-items-center my-4">
-        <div class="card mx-3" style="width: 18rem;">
-            <img src="/img/cpp.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">C++</h5>
-                <p class="card-text">This C++ tutorials for beginners will teach you all the c plus plus concepts from the very starting to the end. This Cpp course will introduce you to programming and will continue the discussion on how to write efficient, fast and better CPP programs.</p>
-                <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL" class="btn btn-primary">Go to Course</a>
+        <h1>Programming Languages</h1>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="/img/cpp.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">C++</h5>
+                        <p class="card-text">This C++ tutorials for beginners will teach you all the c plus plus
+                            concepts from
+                            the very starting to the end. This Cpp course will introduce you to programming and will
+                            continue
+                            the discussion on how to write efficient, fast and better CPP programs.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL"
+                            class="btn btn-primary">Go to Course</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card mx-3" style="width: 18rem;">
-            <img src="/img/py.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Python</h5>
-                <p class="card-text">Each Python lesson in this course for beginners comes with source code and handwritten notes. I wish you the best in your Python learning journey through these CodeWithHarry 100 Day of Code Challenge! Learning Python in Hindi for free is now easier than ever!</p>
-                <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg" class="btn btn-primary">Go to Course</a>
+            <div class="col">
+                <div class="card">
+                    <img src="/img/py.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                        <p class="card-text">Each Python lesson in this course for beginners comes with source code and
+                            handwritten notes. I wish you the best in your Python learning journey through these
+                            CodeWithHarry
+                            100 Day of Code Challenge! Learning Python in Hindi for free is now easier than ever!</p>
+                        <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg"
+                            class="btn btn-primary">Go to Course</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card mx-3" style="width: 18rem;">
-            <img src="/img/java.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Core Java</h5>
-                <p class="card-text">In this complete Core + Advance Java tutorial for beginners in hindi, we will see complete java topics like java JVM, java inheritance, java inheritance & polymorphism and other topics in hindi.</p>
-                <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agS67Uits0UnJyrYiXhDS6q" class="btn btn-primary">Go to Course</a>
+            <div class="col">
+                <div class="card">
+                    <img src="/img/java.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Core Java</h5>
+                        <p class="card-text">In this complete Core + Advance Java tutorial for beginners in hindi, we
+                            will see
+                            complete java topics like java JVM, java inheritance, java inheritance & polymorphism and
+                            other
+                            topics in hindi.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agS67Uits0UnJyrYiXhDS6q"
+                            class="btn btn-primary">Go to Course</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card mx-3" style="width: 18rem;">
-            <img src="/img/c.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">C</h5>
-                <p class="card-text">In this latest course on C language tutorials in 2019 in Hindi , we will learn how to write efficient and powerful C programs using modern tools. These c programming tutorials will clear all your c programming basics and fundamentals.</p>
-                <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR" class="btn btn-primary">Go to Course</a>
+            <div class="col">
+                <div class="card">
+                    <img src="/img/c.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">C</h5>
+                        <p class="card-text">In this latest course on C language tutorials in 2019 in Hindi , we will
+                            learn how
+                            to write efficient and powerful C programs using modern tools. These c programming tutorials
+                            will
+                            clear all your c programming basics and fundamentals.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR"
+                            class="btn btn-primary">Go to Course</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

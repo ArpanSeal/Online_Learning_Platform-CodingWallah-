@@ -12,11 +12,9 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <div class="d-flex">
-                <a href="/"><img class="img-fluid bd-placeholder-img my-2 mx-2" width="40" height="40"
-                        src="/img/logo.jpg"></img></a>
-            </div>
-            <a class="navbar-brand" href="#">CodingWallah</a>
+            <a href="/"><img class="img-fluid bd-placeholder-img my-2 mx-2" width="40" height="40"
+                    src="/img/logo.jpg"></img></a>
+            <a class="navbar-brand" href="/">CodingWallah</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -28,7 +26,7 @@
                         <a class="nav-link" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/html/about.html">About</a>
+                        <a class="nav-link" href="html/about.html">About</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
@@ -47,48 +45,85 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/html/contact.html">Contact Us</a>
+                        <a class="nav-link" href="html/contact.html">Contact Us</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+                <div class="m-2">
+                    <button class="btn btn-primary m-2" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger m-2" data-bs-toggle="modal" data-bs-target="#signupModal">Sign
+                        Up</button>
+                </div>
             </div>
         </div>
     </nav>
 
     <div class="container d-flex justify-content-center allign-items-center my-4">
-        <div class="card mx-3" style="width: 18rem;">
-            <img src="/img/fend.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">HTML, CSS & JS</h5>
-                <p class="card-text">This Website development course will teach you about how to create a website from scratch. This web development course is designed for beginners with an aim to take HTML5, CSS3, JavaScript/ES5/ES6 and other concepts to advanced level. You will be able to create a website easily after watching this.</p>
-                <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg" class="btn btn-primary">Go to Course</a>
+        <h1>Web Development</h1>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="/img/fend.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML, CSS & JS</h5>
+                        <p class="card-text">This Website development course will teach you about how to create a
+                            website from scratch. This web development course is designed for beginners with an aim to
+                            take HTML5, CSS3, JavaScript/ES5/ES6 and other concepts to advanced level. You will be able
+                            to create a website easily after watching this.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg"
+                            class="btn btn-primary">Go to Course</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card mx-3" style="width: 18rem;">
-            <img src="/img/js.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Complete JavaScript</h5>
-                <p class="card-text">This Javascript tutorial in Hindi course is designed for beginners with an aim to take JavaScript/ES6 and its concepts to an advanced level. Master JavaScript with this course now and you will be able to create a website easily after watching this.</p>
-                <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9ahR1blWXxgSlL4y9iQBnLpR" class="btn btn-primary">Go to Course</a>
+            <div class="col">
+                <div class="card">
+                    <img src="/img/js.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Complete JavaScript</h5>
+                        <p class="card-text">This Javascript tutorial in Hindi course is designed for beginners with an
+                            aim to take JavaScript/ES6 and its concepts to an advanced level. Master JavaScript with
+                            this course now and you will be able to create a website easily after watching this.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9ahR1blWXxgSlL4y9iQBnLpR"
+                            class="btn btn-primary">Go to Course</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card mx-3" style="width: 18rem;">
-            <img src="/img/react.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">ReactJS</h5>
-                <p class="card-text">In this course of React Js, we will cover every topic of React so that we can build engaging single-page web applications. This React course is entirely free, and you don't have to pay a single penny to me.</p>
-                <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt" class="btn btn-primary">Go to Course</a>
+            <div class="col">
+                <div class="card">
+                    <img src="/img/react.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ReactJS</h5>
+                        <p class="card-text">In this course of React Js, we will cover every topic of React so that we
+                            can build engaging single-page web applications. This React course is entirely free, and you
+                            don't have to pay a single penny to me.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt"
+                            class="btn btn-primary">Go to Course</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card mx-3" style="width: 18rem;">
-            <img src="/img/php.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">PHP</h5>
-                <p class="card-text">In this complete PHP course, we will look into PHP tutorials step by step in Hindi. This video series on PHP will start with the basics and will teach you concepts till the very end. You will be taught how to create, manage, host and deploy your PHP websites to production.</p>
-                <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9aikXkRE0WxDt1vozo3hnmtR" class="btn btn-primary">Go to Course</a>
+            <div class="col">
+                <div class="card">
+                    <img src="/img/php.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">PHP</h5>
+                        <p class="card-text">In this complete PHP course, we will look into PHP tutorials step by step
+                            in Hindi. This video series on PHP will start with the basics and will teach you concepts
+                            till the very end. You will be taught how to create, manage, host and deploy your PHP
+                            websites to production.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9aikXkRE0WxDt1vozo3hnmtR"
+                            class="btn btn-primary">Go to Course</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

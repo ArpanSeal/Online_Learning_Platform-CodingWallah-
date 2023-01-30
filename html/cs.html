@@ -12,11 +12,9 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <div class="d-flex">
-                <a href="/"><img class="img-fluid bd-placeholder-img my-2 mx-2" width="40" height="40"
-                        src="/img/logo.jpg"></img></a>
-            </div>
-            <a class="navbar-brand" href="#">CodingWallah</a>
+            <a href="/"><img class="img-fluid bd-placeholder-img my-2 mx-2" width="40" height="40"
+                    src="/img/logo.jpg"></img></a>
+            <a class="navbar-brand" href="/">CodingWallah</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -28,10 +26,10 @@
                         <a class="nav-link" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/html/about.html">About</a>
+                        <a class="nav-link" href="html/about.html">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle  active" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Courses
                         </a>
@@ -47,40 +45,81 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/html/contact.html">Contact Us</a>
+                        <a class="nav-link" href="html/contact.html">Contact Us</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+                <div class="m-2">
+                    <button class="btn btn-primary m-2" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger m-2" data-bs-toggle="modal" data-bs-target="#signupModal">Sign
+                        Up</button>
+                </div>
             </div>
         </div>
     </nav>
 
+
     <div class="container d-flex justify-content-center allign-items-center my-4">
-        <div class="card mx-3" style="width: 18rem;">
-            <img src="/img/dsa.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Data Structures and Algorithms</h5>
-                <p class="card-text">This Algorithms and Data Structures course will teach you everything you need to prepare for placements, interviews and logic building. This playlist will teach you how to create optimal solutions to your real world problems. We will cover a wide variety of data structures and algorithms in this course. Make sure to access the notes I have provided along with the course.</p>
-                <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi" class="btn btn-primary">Go to Course</a>
+        <h1>Computer Science Subjects</h1>
+    </div>
+
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="/img/dsa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Structures and Algorithms</h5>
+                        <p class="card-text">This Algorithms and Data Structures course will teach you everything you
+                            need to prepare for placements, interviews and logic building. This playlist will teach you
+                            how to create optimal solutions to your real world problems. We will cover a wide variety of
+                            data structures and algorithms in this course. Make sure to access the notes I have provided
+                            along with the course.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi"
+                            class="btn btn-primary">Go to Course</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card mx-3" style="width: 18rem;">
-            <img src="/img/ml.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Machine Learning</h5>
-                <p class="card-text">In this series, I have covered various Machine learning techniques for beginners. I have tried to cover all the ML Algorithms like linear regression, support vector machines, decision trees including the intricacies like how a linear regression works and how it evaluates loss for getting correct predictions using the loss function, python code for linear regression and gradient descent.</p>
-                <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9ai6fAMHp-acBmJONT7Y4BSG" class="btn btn-primary">Go to Course</a>
+            <div class="col">
+                <div class="card">
+                    <img src="/img/ml.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Machine Learning</h5>
+                        <p class="card-text">In this series, I have covered various Machine learning techniques for
+                            beginners. I
+                            have tried to cover all the ML Algorithms like linear regression, support vector machines,
+                            decision
+                            trees including the intricacies like how a linear regression works and how it evaluates loss
+                            for
+                            getting correct predictions using the loss function, python code for linear regression and
+                            gradient
+                            descent.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9ai6fAMHp-acBmJONT7Y4BSG"
+                            class="btn btn-primary">Go to Course</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card mx-3" style="width: 18rem;">
-            <img src="/img/git.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Git</h5>
-                <p class="card-text">In this git & github tutorials course, I will explain you why a software engineer writing code on a daily basis should learn Git and GitHub basics. In this course, I will teach you how to use git, make commits, create branches, pull requests and many more concepts! This is a complete git course for beginners in Hindi</p>
-                <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agwhy658ZPA0MTStKUJTWPi" class="btn btn-primary">Go to Course</a>
+            <div class="col">
+                <div class="card">
+                    <img src="/img/git.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Git</h5>
+                        <p class="card-text">In this git & github tutorials course, I will explain you why a software
+                            engineer
+                            writing code on a daily basis should learn Git and GitHub basics. In this course, I will
+                            teach you
+                            how to use git, make commits, create branches, pull requests and many more concepts! This is
+                            a
+                            complete git course for beginners in Hindi</p>
+                        <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agwhy658ZPA0MTStKUJTWPi"
+                            class="btn btn-primary">Go to Course</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
